@@ -130,6 +130,22 @@
         </div>
     </section>
 
+    <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
+        <div class="form-zvonok">
+            <div>
+                <label>Имя <span>*</span></label>
+                <input type='text' name='username' required></div>
+            <div>
+                <label>Номер телефона (с кодом) <span>*</span></label>
+                <input type='text' name='usernumber' required></div>
+            <div>
+                <label>Сообщение</label>
+                <input type='text' name='question'>
+            </div>
+            <input class="bot-send-mail" type='submit' value='Послать заявку'>
+        </div>
+    </form>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -193,6 +209,7 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
