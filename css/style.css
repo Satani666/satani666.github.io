@@ -278,11 +278,13 @@ button {
 }
 
 .footer__menu {
-    width: 135px;
+    /* width: 135px; */
+    width: 20%;
 }
 
 .footer .logo {
     height: 100%;
+    width: 25%;
 }
 
 .footer__menu-title,
@@ -330,4 +332,48 @@ button {
     color: #fff;
     padding: 8px 15px 7px;
     border: none;
+}
+
+.footer__support {
+    width: 35%;
+}
+
+.footer__support-contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.footer__support a {
+    color: #5181b8;
+    text-decoration: none;
+}
+
+.footer__support a:hover {
+    color: #3b608a;
+}
+
+.footer__support-call,
+.footer__support-email {
+    position: relative;
+}
+
+.footer__support-call::before,
+.footer__support-email::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -28px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer__support-call::before {
+    background-image: url('../img/call.svg');
+}
+
+.footer__support-email::before {
+    background-image: url('../img/email.svg');
 }
