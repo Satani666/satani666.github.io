@@ -1,0 +1,126 @@
+@media (max-width: 992px) {
+    .header__inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 25px 0;
+    }
+    .menu__list {
+        justify-content: flex-end;
+    }
+    .top__inner {
+        background-image: none;
+    }
+    .direction__items {
+        flex-wrap: wrap;
+    }
+    .direction__item {
+        width: 50%;
+        margin-bottom: 30px;
+        padding-right: 10px;
+    }
+    .direction__hero-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 860px) {
+    .direction__hero {
+        flex-wrap: wrap;
+    }
+    .direction__hero-img {
+        width: 80%;
+        margin: 0 auto 30px;
+        order: -1;
+    }
+    .direction__hero-content {
+        max-width: 100%;
+    }
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+    .footer__form {
+        width: 100%;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top__inner,
+    .direction,
+    .blog {
+        padding: 60px 0 60px;
+    }
+    .about {
+        padding-top: 80px;
+    }
+    .about__inner {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 524px) {
+    .logo {
+        width: 150px;
+        z-index: 20;
+        position: relative;
+    }
+    .header__inner {
+        display: block;
+    }
+    .menu__list {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        text-align: center;
+        transition: all .7s;
+        transform: translateY(-300%);
+    }
+    .menu__list.menu__list--active {
+        transform: translateY(0%);
+        transition: all .7s;
+    }
+    .menu__list-link {
+        display: block;
+        padding: 10px 0;
+    }
+    .menu__btn {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        z-index: 20;
+    }
+    .menu__list-item+.menu__list-item {
+        margin-left: 0;
+    }
+    .top__title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .top__btn {
+        margin-bottom: 25px;
+    }
+    .direction__item {
+        width: 100%;
+    }
+    .direction__items {
+        margin-bottom: 40px;
+    }
+    .about__title,
+    .direction__hero-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .direction__hero {
+        margin-bottom: 40px;
+    }
+    .footer .logo {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .footer__inner {
+        justify-content: space-around
+    }
+}
