@@ -21,9 +21,6 @@
     .direction__hero-img {
         width: 40%;
     }
-    .footer__support-contacts {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 860px) {
@@ -132,5 +129,11 @@
     }
     .footer__inner {
         justify-content: space-around
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__support-contacts {
+        flex-direction: column;
     }
 }
